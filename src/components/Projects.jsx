@@ -22,12 +22,16 @@ const Projects = () => {
           </div>
 
           <div className="project-card">
-            <h3>Portfolio website</h3>
+            <h3>LegalSathi</h3>
             <p>
-              Personal website that successfully highlight projects and
-              accomplishments.
+              AI-powered chatbot enhancing access to justice in Nepal by
+              providing legal document explanations.
             </p>
-            <a href="./" target="_blank" className="project-link">
+            <a
+              href="https://github.com/uniquesht1/codewave_legalsathi"
+              target="_blank"
+              className="project-link"
+            >
               View Project
             </a>
           </div>

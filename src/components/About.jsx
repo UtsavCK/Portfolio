@@ -10,13 +10,23 @@ const About = () => {
       </div>
 
       <section className="card">
-        <h2>Experience</h2>
+        <h2>Event Experiences</h2>
+        <div className="details">
+          <div>
+            <h3>LOCUS Cubing Nepal 2025 | Staff</h3>
+            <p>
+              Facilitated the event by supervising cube time judging,
+              coordinating registration, delivering certificates, arranging
+              stations, and performing runner duties.
+            </p>
+          </div>
+        </div>
         <div className="details">
           <div>
             <h3>Hult Prize at KhCE | StartUps Coordinator</h3>
             <p>
-              Assisted with the event planning process as the startup’s
-              coordinator.
+              Assisted with the event planning process and informing
+              participants of the event details as the startup’s coordinator.
             </p>
           </div>
         </div>
