@@ -42,6 +42,7 @@ a{
 nav a:hover{
     background-color: inherit;
     color: #721121;
+    transition: color 0.3s ease-in-out;
 }
 
 .navlinks{
@@ -120,13 +121,13 @@ main{
 
 button {
     margin-bottom: 5px;
-    padding: 1rem 2rem; /* Balanced padding */
+    padding: 1rem 2rem;
     border: 2px solid #b8a59a;
-    background-color: #f7f4ef; /* Light cream background to match page */
-    color: #4f4a45; /* Dark brown-gray text for readability */
+    background-color: #f7f4ef;
+    color: #4f4a45;
     font-size: 16px;
-    border-radius: 25px; /* Rounded button for a modern, friendly look */
-    transition: all 0.3s ease; /* Smooth hover effect */
+    border-radius: 25px;
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 
@@ -244,9 +245,7 @@ footer{
 }
 
 /*projects*/
-/* General Section Styling */
 #projects {
-    padding: 50px;
     background-color: #f9f9f9;
     text-align: center;
   }
@@ -257,32 +256,40 @@ footer{
     color: #333;
   }
   
-  /* Container for Project Cards */
   .projects-container {
+    padding: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 60px;
   }
   
-  /* Individual Project Card Styling */
   .project-card {
     background: #fff;
     border: 1px solid #ddd;
-    border-radius: 10px;
-    width: 300px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 320px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
   .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
   }
   
   .project-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin: 15px;
     color: #333;
   }
@@ -295,21 +302,21 @@ footer{
   
   .project-card .project-link {
     display: inline-block;
-    margin: 10px 15px 15px;
+    margin: 10px 15px 20px;
     padding: 10px 20px;
-    background-color: #6b8e94    ;
+    background-color: #6b8e94;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 25px;
+    font-weight: bold;
     transition: background-color 0.3s;
   }
   
   .project-card .project-link:hover {
-    background-color: #4f707a    ;
+    background-color: #4f707a;
   }
 
 /*contact*/
-/* Contact Section Layout */
 .contact-container {
     display: flex;
     justify-content: space-between;
@@ -319,75 +326,72 @@ footer{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 60%;
     margin: 30px auto;
-    height: auto;
 }
 
 /* Left Section */
 .contact-left {
     flex: 1;
-    padding: 20px;
+    padding: 10px 20px;
     min-width: 100px;
-    color: #6c4f3d; /* Warm brown for text */
+    color: #6c4f3d;
+    text-align: left;
 }
 
 .contact-left h2 {
     font-size: 32px;
     margin-bottom: 10px;
-    color: #4b3c28; /* Darker brown for emphasis */
+    color: #4b3c28;
 }
 
 .contact-left p {
     font-size: 16px;
     line-height: 1.5;
-    color: #7a6a56; /* Softer brown-gray for body text */
+    color: #7a6a56;
 }
 
 /* Right Section (Form) */
 .contact-right {
     flex: 1.5;
     padding: 20px;
-    background-color: #ffffff; /* White background for the form */
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: fit-content; /* Prevent overflow */
+    max-width: fit-content;
     min-width: 150px;
 }
 
-/* Form Elements */
 .contact-form input,
 .contact-form textarea {
-    width: 100%; /* Ensure they do not exceed the parent container */
+    width: 100%;
     padding: 12px;
     margin-bottom: 15px;
-    border: 2px solid #d0c7b7; /* Soft taupe border */
-    border-radius: 8px; /* Rounded edges */
-    background-color: #fff; /* White input background */
-    color: #4f4a45; /* Dark text for readability */
+    border: 2px solid #d0c7b7;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #4f4a45;
     font-size: 16px;
-    box-sizing: border-box; /* Include padding and border in the width */
+    box-sizing: border-box;
 }
 
-/* Textarea resize and fixed height */
 .contact-form textarea {
     resize: none;
-    height: 120px;
+    height: 30vh;
 }
 
-/* Button Style */
 .submit-btn {
     padding: 12px 25px;
     border: none;
-    background-color: #d6c9a1; /* Soft beige with a hint of yellow */
-    color: #4f4a45; /* Dark brown-gray text */
-    border-radius: 25px; /* Rounded button shape */
+    background-color: #d6c9a1;
+    color: #4f4a45;
+    border-radius: 25px;
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .submit-btn:hover {
-    background-color: #b8a582; /* Darker beige for hover */
-    color: #fff; /* White text on hover */
+    background-color: #b8a582;
+    color: #fff;
 }
 
 /*-----------------------------------------------------------------------------------------*/
@@ -419,6 +423,7 @@ footer{
         flex-direction: column;
         align-items: center;
         width: 100%;
+        transition:all 2s ease-in-out;
     }
 
     .navlinks_small ul{
@@ -447,15 +452,15 @@ footer{
         align-items: center;
     }
     .contact-container {
-        flex-direction: column; /* Stack elements vertically */
+        flex-direction: column;
         min-width: fit-content;
         align-items: center;
     }
 
     .contact-left,
     .contact-right {
-        flex: unset; /* Reset flex growth */
-        width: 80%; /* Full width for both sections */
+        flex: unset;
+        width: 80%;
         align-items: center;
         justify-content: center;
     }

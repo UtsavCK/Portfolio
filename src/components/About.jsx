@@ -1,6 +1,50 @@
 import React from "react";
 import CV from "../assets/Images/UtsavKayastha_CV.pdf";
+import AboutSectionCard from "./cards/AboutSectionCard";
 const About = () => {
+  const eventDetails = [
+    {
+      title: "LOCUS Cubing Nepal 2025 | Staff",
+      description:
+        "Facilitated the event by supervising cube time judging, coordinating registration, delivering certificates, arranging stations, and performing runner duties.",
+    },
+    {
+      title: "Hult Prize at KhCE | StartUps Coordinator",
+      description:
+        "Assisted with the event planning process and informing participants of the event details as the startup’s coordinator.",
+    },
+  ];
+
+  const hackathonDetails = [
+    {
+      title: "Hack The Circle 2024",
+      description:
+        "Participated in HackTheCircle organized at KhCE and created a platform for youths to volunteer towards cultural preservation with team.",
+    },
+    {
+      title: "Codewave 2024",
+      description:
+        "Participated in Codewave organized at KU and helped to create a legal chatbot that helps general public to learn about laws through interaction.",
+    },
+  ];
+
+  const educationDetails = [
+    {
+      title: "Khwopa College of Engineering",
+      description:
+        "Currently pursuing a Bachelor's degree in Computer Engineering at Khwopa College of Engineering.",
+    },
+    {
+      title: "Khwopa Higher Secondary School",
+      description:
+        "Completed Higher Secondary Education with a focus on Science at Khwopa Higher Secondary School.",
+    },
+    {
+      title: "Nobel Academy",
+      description:
+        "Completed SEE from Nobel Academy, where I developed a strong foundation in various subjects.",
+    },
+  ];
   return (
     <main id="about_main">
       <div className="download-cv">
@@ -9,80 +53,17 @@ const About = () => {
         </a>
       </div>
 
-      <section className="card">
-        <h2>Event Experiences</h2>
-        <div className="details">
-          <div>
-            <h3>LOCUS Cubing Nepal 2025 | Staff</h3>
-            <p>
-              Facilitated the event by supervising cube time judging,
-              coordinating registration, delivering certificates, arranging
-              stations, and performing runner duties.
-            </p>
-          </div>
-        </div>
-        <div className="details">
-          <div>
-            <h3>Hult Prize at KhCE | StartUps Coordinator</h3>
-            <p>
-              Assisted with the event planning process and informing
-              participants of the event details as the startup’s coordinator.
-            </p>
-          </div>
-        </div>
-      </section>
+      <AboutSectionCard title="Event Experiences" details={eventDetails} />
 
-      <section className="card">
-        <h2>Hackathon Experiences</h2>
-        <div className="details">
-          <div>
-            <h3>Hack The Circle, 2024</h3>
-            <p>
-              Participated in HackTheCircle organized at KhCE and created a
-              platform for youths to volunteer towards cultural preservation
-              with team.
-            </p>
-          </div>
-        </div>
-        <div className="details">
-          <div>
-            <h3>Codewave, 2024</h3>
-            <p>
-              Participated in Codewave organized at KU and helped to create a
-              legal chatbot that helps general public to learn about laws
-              through interaction.
-            </p>
-          </div>
-        </div>
-        <div className="details">
-          <div>
-            <h3>Hult Prize at IOE, 2023</h3>
-            <p>Participated in Hult Prize and made it to the semi-finals.</p>
-          </div>
-        </div>
-      </section>
+      <AboutSectionCard
+        title="Hackathon Experiences"
+        details={hackathonDetails}
+      />
 
-      <section className="card">
-        <h2>Education</h2>
-        <div className="details">
-          <div>
-            <h3>Bachelor's in Compuer Engineering</h3>
-            <p>Khwopa College of Engineering</p>
-          </div>
-        </div>
-        <div className="details">
-          <div>
-            <h3>Higher Secondary Education</h3>
-            <p>Khwopa Higher Secondary School</p>
-          </div>
-        </div>
-        <div className="details">
-          <div>
-            <h3>SEE</h3>
-            <p>Nobel Academy</p>
-          </div>
-        </div>
-      </section>
+      <AboutSectionCard
+        title="Education Experiences"
+        details={educationDetails}
+      />
 
       <section className="card">
         <h2>Skills & Expertise</h2>
