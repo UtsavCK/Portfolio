@@ -4,7 +4,7 @@ import AboutCard from "./AboutCard";
 const AboutSectionCard = (props) => {
   return (
     <section className="card">
-      <h2>{props.title}</h2>
+      <h2>| {props.title}</h2>
       <div className="details">
         <div>
           {props.details.map((details, index) => (

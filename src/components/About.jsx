@@ -17,32 +17,34 @@ const About = () => {
 
   const hackathonDetails = [
     {
-      title: "Hack The Circle 2024",
+      title: "Hack The Circle, 2024",
       description:
         "Participated in HackTheCircle organized at KhCE and created a platform for youths to volunteer towards cultural preservation with team.",
     },
     {
-      title: "Codewave 2024",
+      title: "Codewave, 2024",
       description:
         "Participated in Codewave organized at KU and helped to create a legal chatbot that helps general public to learn about laws through interaction.",
+    },
+    {
+      title: "Hult Prize at KhCE, 2023",
+      description:
+        "Participated in Hult Prize and made it to the semi-finals. Pitched use of flax as a sustainable alternative to cotton for fashion.",
     },
   ];
 
   const educationDetails = [
     {
       title: "Khwopa College of Engineering",
-      description:
-        "Currently pursuing a Bachelor's degree in Computer Engineering at Khwopa College of Engineering.",
+      description: "Bachelor's in Computer Engineering",
     },
     {
       title: "Khwopa Higher Secondary School",
-      description:
-        "Completed Higher Secondary Education with a focus on Science at Khwopa Higher Secondary School.",
+      description: "Higher Secondary Education with Science as major",
     },
     {
       title: "Nobel Academy",
-      description:
-        "Completed SEE from Nobel Academy, where I developed a strong foundation in various subjects.",
+      description: "SEE (Secondary Education Examination)",
     },
   ];
   return (
@@ -65,18 +67,26 @@ const About = () => {
         details={educationDetails}
       />
 
-      <section className="card">
-        <h2>Skills & Expertise</h2>
-        <p>
-          <b>Frontend technologies:</b> HTML/CSS/JS, ReactJS, Vite
-        </p>
-        <p>
-          <b>Languages:</b> JavaScript, Python, C, C++, SQL
-        </p>
-        <p>
-          <b>Soft Skills:</b> Problem Solving, Communication, Teamwork,
-          Detail-Oriented
-        </p>
+      <section className="card skills-card">
+        <h2>| Skills & Expertise</h2>
+        <div className="skills-list">
+          <div className="skill-item">
+            <span className="skill-label">Frontend:</span>
+            <span className="skill-value">
+              HTML, CSS, JavaScript, React, Vite
+            </span>
+          </div>
+          <div className="skill-item">
+            <span className="skill-label">Languages:</span>
+            <span className="skill-value">JavaScript, Python, C/C++, SQL</span>
+          </div>
+          <div className="skill-item">
+            <span className="skill-label">Soft Skills:</span>
+            <span className="skill-value">
+              Problem Solving, Communication, Teamwork
+            </span>
+          </div>
+        </div>
       </section>
     </main>
   );
