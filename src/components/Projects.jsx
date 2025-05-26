@@ -1,13 +1,13 @@
 import React from "react";
 import ProjectCard from "./cards/ProjectCard";
-import acmeImg from "../assets/Images/Projects/acme.png";
-import blogImg from "../assets/Images/Projects/blog.png";
-import malwareImg from "../assets/Images/Projects/malware.png";
-import legalsathiImg from "../assets/Images/Projects/legalsathi.png";
-import racircleImg from "../assets/Images/Projects/racircle.png";
-import steganalysisImg from "../assets/Images/Projects/steganalysis.png";
-import todoImg from "../assets/Images/Projects/todo.png";
-import comingSoonImg from "../assets/Images/Projects/coming-soon.png";
+import acmeImg from "../assets/Images/Projects/acme.jpg";
+import blogImg from "../assets/Images/Projects/blog.jpg";
+import malwareImg from "../assets/Images/Projects/malware.jpg";
+import legalsathiImg from "../assets/Images/Projects/legalsathi.jpg";
+import racircleImg from "../assets/Images/Projects/racircle.jpg";
+import steganalysisImg from "../assets/Images/Projects/steganalysis.jpg";
+import todoImg from "../assets/Images/Projects/todo.jpg";
+import comingSoonImg from "../assets/Images/Projects/coming-soon.jpg";
 
 const Projects = () => {
   const projectDetails = [
