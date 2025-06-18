@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCard from "./cards/ProjectCard";
+import furnishemImg from "../assets/Images/Projects/furnishem.jpg";
 import acmeImg from "../assets/Images/Projects/acme.jpg";
 import blogImg from "../assets/Images/Projects/blog.jpg";
 import malwareImg from "../assets/Images/Projects/malware.jpg";
@@ -11,6 +12,13 @@ import comingSoonImg from "../assets/Images/Projects/coming-soon.jpg";
 
 const Projects = () => {
   const projectDetails = [
+    {
+      title: "Furnish 'em",
+      description:
+        "A sleek frontend for a furnishing brand showcasing scroll-based and timeline animations using GSAP.",
+      link: "https://furnish-em.vercel.app/",
+      image: furnishemImg,
+    },
     {
       title: "ACME Dashboard",
       description: "A dashboard for ACME to manage their data and operations.",
