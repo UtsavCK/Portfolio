@@ -2,6 +2,19 @@ import React from "react";
 import CV from "../assets/Images/UtsavKayastha_CV.pdf";
 import AboutSectionCard from "./cards/AboutSectionCard";
 const About = () => {
+  const workDetails = [
+    {
+      title: "Fellowship - Software Engineering [NCHL]",
+      description:
+        "Full-stack development with Java, Spring Boot, REST APIs, frontend state management, Spring Security, Dockerized databases, SonarQube, and understanding of legacy transactional codebases.",
+    },
+    {
+      title: "Frontend Developer Intern [Logispark Technologies]",
+      description:
+        "Optimized Vue/Nuxt app by implementing infinite scroll, improving all Lighthouse metrics, and building secure PWA features with JWT auth, guards, interceptors, and state management using Pinia/Vuex.",
+    },
+  ];
+
   const eventDetails = [
     {
       title: "LOCUS Cubing Nepal 2025 | Staff",
@@ -55,6 +68,8 @@ const About = () => {
         </a>
       </div>
 
+      <AboutSectionCard title="Work Experiences" details={workDetails} />
+
       <AboutSectionCard title="Event Experiences" details={eventDetails} />
 
       <AboutSectionCard
@@ -73,12 +88,20 @@ const About = () => {
           <div className="skill-item">
             <span className="skill-label">Frontend:</span>
             <span className="skill-value">
-              HTML, CSS, JavaScript, React, Vite
+              HTML, CSS, JS/TS, Vite, React, Vue, Nuxt, Angular
+            </span>
+          </div>
+          <div className="skill-item">
+            <span className="skill-label">Backend:</span>
+            <span className="skill-value">
+              Java, Spring Boot, Spring Security, REST APIs
             </span>
           </div>
           <div className="skill-item">
             <span className="skill-label">Languages:</span>
-            <span className="skill-value">JavaScript, Python, C/C++, SQL</span>
+            <span className="skill-value">
+              JavaScript, TypeScript, Python, C/C++, SQL, Java
+            </span>
           </div>
           <div className="skill-item">
             <span className="skill-label">Soft Skills:</span>

@@ -13,11 +13,11 @@ const Main = () => {
           <h1>Utsav Kayastha</h1>
           <h3>Few things about me!</h3>
           <p>
-            Hi! I'm Utsav Kayastha, a recent Computer Engineering graduate with
-            a passion for exploring new technologies. I'm a curious
-            problem-solver and approach challenges with a curious mindset. This
-            site is a little showcase of what I've been up to. Thanks for
-            stopping by!
+            Hi! I&apos;m Utsav Kayastha, a recent Computer Engineering graduate and
+            aspiring Fullstack Software Engineer. I enjoy building end-to-end
+            web applications, solving problems with a creative and analytical
+            approach, and exploring new technologies. This site showcases some
+            of the projects I&apos;ve worked on. Thanks for stopping by!
           </p>
           <br />
           <Link to="/about">

@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCard from "./cards/ProjectCard";
+import expenseSplitterImg from "../assets/Images/Projects/expensesplitter.jpg";
 import furnishemImg from "../assets/Images/Projects/furnishem.jpg";
 import acmeImg from "../assets/Images/Projects/acme.jpg";
 import blogImg from "../assets/Images/Projects/blog.jpg";
@@ -12,6 +13,13 @@ import comingSoonImg from "../assets/Images/Projects/coming-soon.jpg";
 
 const Projects = () => {
   const projectDetails = [
+    {
+      title: "Expense Splitter",
+      description:
+        "A web app to split expenses among friends and keep track of shared costs.",
+      link: "https://github.com/UtsavCK/Expense-Splitter/",
+      image: expenseSplitterImg,
+    },
     {
       title: "Furnish 'em",
       description:
@@ -36,14 +44,14 @@ const Projects = () => {
       title: "Multimodal Approach to Malware Classification",
       description:
         "A research project on malware classification using a multimodal approach.",
-      link: "https://github.com/cruvss/Multimodal-Approach-For-Malware-Classification",
+      link: "https://github.com/UtsavCK/Multimodal-Approach-For-Malware-Classification",
       image: malwareImg,
     },
     {
       title: "LegalSathi",
       description:
         "AI-powered chatbot enhancing access to justice in Nepal by providing legal document explanations.",
-      link: "https://github.com/uniquesht1/codewave_legalsathi",
+      link: "https://github.com/UtsavCK/codewave_legalsathi",
       image: legalsathiImg,
     },
     {
