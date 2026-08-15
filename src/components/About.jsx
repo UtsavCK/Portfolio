@@ -4,9 +4,14 @@ import AboutSectionCard from "./cards/AboutSectionCard";
 const About = () => {
   const workDetails = [
     {
+      title: "Software Engineer [NCHL]",
+      description:
+        "Working on backend systems for core banking applications, with a focus on access control, security, and data integrity. Involved in improving how user permissions are managed, strengthening system security, and helping integrate services across different parts of the platform.",
+    },
+    {
       title: "Fellowship - Software Engineering [NCHL]",
       description:
-        "Full-stack development with Java, Spring Boot, REST APIs, frontend state management, Spring Security, Dockerized databases, SonarQube, and understanding of legacy transactional codebases.",
+        "Full-stack development with Java, Spring Boot, REST APIs, frontend state management, Spring Security, Dockerized databases, SonarQube, and gained familiarity with legacy codebase.",
     },
     {
       title: "Frontend Developer Intern [Logispark Technologies]",
@@ -86,21 +91,25 @@ const About = () => {
         <h2>| Skills & Expertise</h2>
         <div className="skills-list">
           <div className="skill-item">
+            <span className="skill-label">Backend:</span>
+            <span className="skill-value">
+              Java, Spring Boot, Spring Security, REST APIs, PostgreSQL
+            </span>
+          </div>
+          <div className="skill-item">
             <span className="skill-label">Frontend:</span>
             <span className="skill-value">
               HTML, CSS, JS/TS, Vite, React, Vue, Nuxt, Angular
             </span>
           </div>
           <div className="skill-item">
-            <span className="skill-label">Backend:</span>
-            <span className="skill-value">
-              Java, Spring Boot, Spring Security, REST APIs
-            </span>
+            <span className="skill-label">Tools:</span>
+            <span className="skill-value">Git, Docker, Postman, JWT</span>
           </div>
           <div className="skill-item">
             <span className="skill-label">Languages:</span>
             <span className="skill-value">
-              JavaScript, TypeScript, Python, C/C++, SQL, Java
+              Java, JavaScript, TypeScript, SQL
             </span>
           </div>
           <div className="skill-item">
